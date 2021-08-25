@@ -9,7 +9,7 @@
 <body>
     <?php
         //Creare una variabile con un paragrafo di testo a vostra scelta.
-        $paragrafo = "Questa ricetta è l’espressione della grande creatività italiana in cucina: pochi ingredienti delle razioni dell’esercito americano per un giovane cuoco che si trovò nell’impegnativo incarico di
+        $paragrafo =    "Questa ricetta è l’espressione della grande creatività italiana in cucina: pochi ingredienti delle razioni dell’esercito americano per un giovane cuoco che si trovò nell’impegnativo incarico di
                         mettere su un pranzo per le truppe alleate a base, naturalmente, di spaghetti, ma niente pomodori, solo uova & bacon americane, una buonissima crema di latte e del formaggio grattugiato; per 
                         finire un pizzico di pepe nero e la ricetta passa di bocca in bocca in tutto il mondo.
                         Nel tempo, si sostituisce la pancetta con il guanciale e dopo diverse versioni si elimina completamente la panna, ma si inserisce qualche albume per migliorare la cremosità.
@@ -18,8 +18,9 @@
                         Al composto che ottieni aggiungi il Pecorino Medoro grattugiato e abbondante pepe macinato al momento, mescola bene.
                         Scola gli spaghetti al dente, mettili nella padella in cui c’è il guanciale, aggiungi il resto del composto e amalgama energicamente a fuoco spento.
                         Impiatta e servi la pasta alla carbonara con guanciale e pecorino accompagnata da un buon bicchiere di vino rosso delle nostre terre, per consolidare amicizie e trovare nuove alleanze.";
-        $lunghezzaParagrafo = strlen($paragrafo);
         $parolaCensurata = $_GET["word"];
+        $paragrafo = str_replace($parolaCensurata,"***",$paragrafo);
+        $lunghezzaParagrafo = strlen($paragrafo);
     ?>
     <p><?php  echo $paragrafo  ?> </p>
     <h3>il paragrafo contiene <?php echo $lunghezzaParagrafo ?> caratteri</h3>
