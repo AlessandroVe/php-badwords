@@ -19,8 +19,10 @@
                         Scola gli spaghetti al dente, mettili nella padella in cui c’è il guanciale, aggiungi il resto del composto e amalgama energicamente a fuoco spento.
                         Impiatta e servi la pasta alla carbonara con guanciale e pecorino accompagnata da un buon bicchiere di vino rosso delle nostre terre, per consolidare amicizie e trovare nuove alleanze.";
         $lunghezzaParagrafo = strlen($paragrafo);
+        $parolaCensurata = $_GET["word"];
     ?>
     <p><?php  echo $paragrafo  ?> </p>
     <h3>il paragrafo contiene <?php echo $lunghezzaParagrafo ?> caratteri</h3>
+    <h4>La parola censurata e' <?php echo $parolaCensurata ?> </h4>
 </body>
 </html>
