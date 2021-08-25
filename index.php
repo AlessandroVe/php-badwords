@@ -24,6 +24,6 @@
     ?>
     <p><?php  echo $paragrafo  ?> </p>
     <h3>il paragrafo contiene <?php echo $lunghezzaParagrafo ?> caratteri</h3>
-    <h4>La parola censurata e' <?php echo $parolaCensurata ?> </h4>
+    
 </body>
 </html>
